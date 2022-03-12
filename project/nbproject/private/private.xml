@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/sioni/Documents/NetBeansProjects/project1/project/web/index.jsp</file>
+            <file>file:/C:/Users/sioni/Documents/NetBeansProjects/project1/project/web/insert.jsp</file>
+            <file>file:/C:/Users/sioni/Documents/NetBeansProjects/project1/project/web/search.jsp</file>
+            <file>file:/C:/Users/sioni/Documents/NetBeansProjects/project1/project/web/style.css</file>
+            <file>file:/C:/Users/sioni/Documents/NetBeansProjects/project1/project/web/update.jsp</file>
+            <file>file:/C:/Users/sioni/Documents/NetBeansProjects/project1/project/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/sioni/Documents/NetBeansProjects/project1/project/src/java/controller/RegistrationController.java</file>
+            <file>file:/C:/Users/sioni/Documents/NetBeansProjects/project1/project/src/java/dal/ProductDBContext.java</file>
+            <file>file:/C:/Users/sioni/Documents/NetBeansProjects/project1/project/src/java/controller/DeleteController.java</file>
+            <file>file:/C:/Users/sioni/Documents/NetBeansProjects/project1/project/web/welcome.jsp</file>
+            <file>file:/C:/Users/sioni/Documents/NetBeansProjects/project1/project/src/java/controller/UpdateController.java</file>
+            <file>file:/C:/Users/sioni/Documents/NetBeansProjects/project1/project/web/registration.jsp</file>
+            <file>file:/C:/Users/sioni/Documents/NetBeansProjects/project1/project/src/java/dal/DBContext.java</file>
+            <file>file:/C:/Users/sioni/Documents/NetBeansProjects/project1/project/src/java/controller/InsertController.java</file>
+            <file>file:/C:/Users/sioni/Documents/NetBeansProjects/project1/project/src/conf/MANIFEST.MF</file>
+            <file>file:/C:/Users/sioni/Documents/NetBeansProjects/project1/project/src/java/dal/AccountDBContext.java</file>
+            <file>file:/C:/Users/sioni/Documents/NetBeansProjects/project1/project/src/java/controller/SearchController.java</file>
+        </group>
+    </open-files>
+</project-private>
