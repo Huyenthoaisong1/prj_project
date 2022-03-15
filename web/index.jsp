@@ -17,7 +17,7 @@
         <div class="container">
             <div class="box">
                 <h1>Login Account</h1>
-                <form action="login" method="POST">
+                <form action="index" method="POST">
                     <p class="text-danger">${message}</p>
                     <p class="text-registration">${message2}</p>
                     
@@ -26,7 +26,7 @@
                         Password: <input type="password" name="password"/> <br/>
                     </div>
                     <input type="submit" value="Login" /><br>
-                    <a href="registration.jsp">Create New Account</a><br>
+                    <a href="registration">Create New Account</a><br>
                 </form>
             </div>
         </div>

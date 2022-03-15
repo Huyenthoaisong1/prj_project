@@ -38,7 +38,7 @@ public class SearchController extends HttpServlet {
 
         
         ProductDBContext patients = new ProductDBContext();
-        ArrayList<Product> prt = patients.GetPatients();
+        ArrayList<Product> prt = patients.GetProducts();
 
         request.setAttribute("prt", prt);
 

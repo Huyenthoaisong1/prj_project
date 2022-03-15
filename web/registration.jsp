@@ -27,7 +27,7 @@
                   
                   Re-Enter Password: <input type="password" placeholder="Repeat Password" name="repassword" required><br>
                     <input type="submit" value="Register"><br>
-                    <a href="index.jsp">Already have Account?</a><br>
+                    <a href="index">Already have Account?</a><br>
                 </form>
             </div>
 

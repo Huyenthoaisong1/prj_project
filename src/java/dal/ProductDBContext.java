@@ -18,7 +18,7 @@ import model.Product;
  * @author sioni
  */
 public class ProductDBContext extends DBContext {
-        public ArrayList<Product> GetPatients() {
+        public ArrayList<Product> GetProducts() {
         ArrayList<Product> product = new ArrayList<>();
         try {
             String sql = "SELECT TOP (1000) [name]\n" +
@@ -164,6 +164,9 @@ public class ProductDBContext extends DBContext {
         }
         
     }
+   
 }
+
+
 
 

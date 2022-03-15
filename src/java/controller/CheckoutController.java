@@ -5,20 +5,18 @@
  */
 package controller;
 
-import dal.AccountDBContext;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.Account;
 
 /**
  *
  * @author sioni
  */
-public class RegistrationController extends HttpServlet {
+public class CheckoutController extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -29,13 +27,7 @@ public class RegistrationController extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-   
-      
-
-    }
+ 
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -49,8 +41,7 @@ public class RegistrationController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.getRequestDispatcher("registration.jsp").forward(request, response);
-      //  processRequest(request, response);
+            request.getRequestDispatcher("cart.jsp").forward(request, response);
     }
 
     /**
@@ -64,39 +55,7 @@ public class RegistrationController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-          String username = request.getParameter("name");
-        String password = request.getParameter("password");
-        String repassword = request.getParameter("repassword");
-        
-        if(!password.equals(repassword))
-        {
-        request.setAttribute("message3", "Register Unsuccessfully");
-         request.getRequestDispatcher("registration.jsp").forward(request, response);
-        }
-        else 
-        {
-            AccountDBContext db = new AccountDBContext();
-            Account account = db.checkAccountExist(username);
-            if (account == null)
-                //user chua co
-                //login dc
-            {
-                db.signupAccount(username, password); 
-                request.setAttribute("message2", "Register Successfully");
-                response.sendRedirect("index.jsp");
-          
-            }
-            else
-                //da co user
-                //khong the dang ky
-            {
-            request.setAttribute("message3", "Register Unsuccessfully");
-            request.getRequestDispatcher("registration.jsp").forward(request, response);
-                
-            }
-
-        }
+     
     }
 
     /**

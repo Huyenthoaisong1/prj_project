@@ -31,8 +31,6 @@
         <button><a href="Search">sản phẩm hiện có</a></button>
         <button><a href="LogoutServlet">xuất hóa đơn</a></button>
         <button><a href="Insert">thêm sản phẩm</a></button>
-        <button><a href="Delete">xóa sản phẩm</a></button>
-        <button><a href="LogoutServlet">chỉnh sửa sản phẩm</a></button>
         
         
         </div>

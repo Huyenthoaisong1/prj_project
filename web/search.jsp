@@ -4,6 +4,7 @@
     Author     : almam
 --%>
 
+<%@page import="model.Order"%>
 <%@page import="model.Account"%>
 <%@page import="model.Product"%>
 <%@page import="java.util.ArrayList"%>
@@ -19,7 +20,9 @@
         <%
 
             ArrayList<Product> prt = (ArrayList<Product>) request.getAttribute("prt");
-
+Order order = (Order)session.getAttribute("shoppingcart");
+            if(order==null)
+                order = new Order();
         %>
 
         <script>
@@ -44,7 +47,7 @@
         </script>
     </head>
     <body>
-
+  <%=order.getSize()+" "%> items in the shopping cart.
         <%if (prt.size() > 0) {%>
         <table border="1px">
             <tr>
@@ -53,9 +56,7 @@
                 <td>Thể Loại</td>
                 <td>chỉnh sửa sản phẩm</td>
                 <td>xóa sản phẩm</td>
-                asrherh
-                erherwh
-                hwerh
+              
             </tr>
             <%for (Product P : prt) {
             %>
@@ -67,7 +68,10 @@
 
 
                 <td> <a href="#" onclick="deleteProduct(this)" value="<%=P.getName()%>">xóa sản phẩm so</a></td>
-                <td> <a href="#" onclick='deleteProduct("+<%=P.getName()%>+")'>xóa sản phẩm blank</a></td>
+                <td>     <form action="addcart" method="POST"> 
+                        <input type="hidden" value="<%=P.getName()%>" name="name"/>
+                        <input type="submit" value="Buy"/>
+                    </form></td>
 
             </tr>
             <%}%>
@@ -75,6 +79,7 @@
         <%} else {%>
         No record to display.
         <%}%>
+        <button><a href="checkout">buy</a></button>
         <button><a href="welcome.jsp">về trang chính</a></button>
         <button><a href="insert.jsp">thêm sản phẩm</a></button>
 
