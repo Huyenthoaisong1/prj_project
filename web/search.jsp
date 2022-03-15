@@ -53,6 +53,9 @@
                 <td>Thể Loại</td>
                 <td>chỉnh sửa sản phẩm</td>
                 <td>xóa sản phẩm</td>
+                asrherh
+                erherwh
+                hwerh
             </tr>
             <%for (Product P : prt) {
             %>
