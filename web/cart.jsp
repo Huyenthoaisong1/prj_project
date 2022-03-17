@@ -53,4 +53,7 @@
           <a href="welcome.jsp">Về trang chính</a>
           <a class="checkout1" href="welcome.jsp">thanh toán</a>
         </div>
+
+    </body>
+
 </html>
