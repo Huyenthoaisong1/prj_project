@@ -13,7 +13,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-        <link rel="stylesheet" href="style.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <%
               ArrayList<Product> prt = (ArrayList<Product>) request.getAttribute("prt");
             Product p = (Product)request.getAttribute("product");

@@ -11,7 +11,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="style.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/styleforinsert.css" rel="stylesheet" type="text/css"/>
         <title>JSP Page</title>
         <%
             ArrayList<Product> product = (ArrayList<Product>)request.getAttribute("product");

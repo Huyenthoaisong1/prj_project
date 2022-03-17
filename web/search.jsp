@@ -16,7 +16,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Welcome Page</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="style.css">
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="css/styleforsearch.css" rel="stylesheet" type="text/css"/>
+
         <%
 
             ArrayList<Product> prt = (ArrayList<Product>) request.getAttribute("prt");
@@ -47,8 +49,10 @@ Order order = (Order)session.getAttribute("shoppingcart");
         </script>
     </head>
     <body>
+        <div class="size">
   <%=order.getSize()+" "%> items in the shopping cart.
         <%if (prt.size() > 0) {%>
+        </div>
         <table border="1px">
             <tr>
                 <td>Tên</td>
@@ -70,7 +74,7 @@ Order order = (Order)session.getAttribute("shoppingcart");
                 <td> <a href="#" onclick="deleteProduct(this)" value="<%=P.getName()%>">xóa sản phẩm so</a></td>
                 <td>     <form action="addcart" method="POST"> 
                         <input type="hidden" value="<%=P.getName()%>" name="name"/>
-                        <input type="submit" value="Buy"/>
+                        <input type="submit" value="Thêm vào hóa đơn"/>
                     </form></td>
 
             </tr>
@@ -79,9 +83,10 @@ Order order = (Order)session.getAttribute("shoppingcart");
         <%} else {%>
         No record to display.
         <%}%>
-        <button><a href="checkout">buy</a></button>
-        <button><a href="welcome.jsp">về trang chính</a></button>
-        <button><a href="insert.jsp">thêm sản phẩm</a></button>
-
+        <div class="buttonlayout">
+              <button><a href="checkout">Xuất hóa đơn</a></button>
+        <button><a href="welcome.jsp">Về trang chính</a></button>
+        <button><a href="insert.jsp">Thêm sản phẩm</a></button>
+         </div>
     </body>
 </html>

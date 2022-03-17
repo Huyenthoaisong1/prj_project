@@ -11,12 +11,13 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
        
         <title>JSP Page</title>
-        <link rel="stylesheet" href="style.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div class="container">
             <div class="box">
                 <h1>Login Account</h1>
+                <a href="insert.jsp"></a>
                 <form action="index" method="POST">
                     <p class="text-danger">${message}</p>
                     <p class="text-registration">${message2}</p>

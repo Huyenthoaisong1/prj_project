@@ -15,7 +15,8 @@
         <%
             Order order = (Order)session.getAttribute("shoppingcart");
         %>
-         <link rel="stylesheet" href="style.css">
+         <link href="css/style.css" rel="stylesheet" type="text/css"/>
+         <link href="css/styleforcheckou.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <% if(order !=null){ %>
@@ -43,8 +44,13 @@
             </tr>
         </table>
         <%}else{%>
-        You did not buy anything!
+        <div class="worddisplay">
+        Chưa có sản phẩm nào trong hóa đơn
+        </div>
         <%}%>
-          <a href="Search">Already have Account?</a><br>
-    </body>
+        <div class="checkout">
+          <a href="Search">Thêm sản phẩm vào hóa đơn</a><br>
+          <a href="welcome.jsp">Về trang chính</a>
+          <a class="checkout1" href="welcome.jsp">thanh toán</a>
+        </div>
 </html>
